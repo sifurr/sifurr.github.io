@@ -3,9 +3,8 @@ class Cart{
     static addProductToCart(productImage, productTitle, author) {    
     let newProduct = document.createElement('li');
     let emptyCart = document.querySelectorAll('.empty-cart')[0]; 
-    console.log(emptyCart)
     let cartSubHeading = document.querySelector('.emtyMsg');
-    console.log(cartSubHeading);
+        
     // cartSubHeading.innerText = 'Product has been added in the cart';   
     // check if the product already exists in the cart
     let getCartProdTitle = emptyCart.querySelectorAll('.product-title-cart');   
