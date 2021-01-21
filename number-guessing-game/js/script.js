@@ -9,23 +9,19 @@ function guessRightNumber() {
         max = 10;
         let correctAns = Math.floor(Math.random() * (max - min) + min + 1);
 
-        console.log("Correct Number: ", correctAns);
-
-        let userNumber = prompt("Please enter your number from 0 to 10 > ")
-        console.log("My guess is: " + userNumber);
-
-
+        let userNumber = prompt("Please enter your number from 0 to 10 > ");
+        
         if (userNumber > correctAns) {
-            alert('Correct answer is greater!')
+            alert('Correct answer is greater!');
         } else if (userNumber < correctAns) {
-            alert('Correct answer is smaller!')
+            alert('Correct answer is smaller!');
         } else if (userNumber == correctAns) {
-            alert("You Win!")
+            alert("You Win!");
             return
         }
         counter++;
         if (counter == 4) {
-            alert('You lose!')
+            alert('You lose!');
             return
         }
 
